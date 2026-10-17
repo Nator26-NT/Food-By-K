@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food By K | Flame-Grilled Perfection</title>
+    <meta name="description" content="Food By K - The best burgers, ribs, and wings in Lenasia. Food, Love, Soul.">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header id="main-header">
+        <div class="container nav-container">
+            <div class="logo" onclick="navigateTo('home')">
+                <img src="images/Logo.jpg" alt="Food By K Logo" id="nav-logo">
+            </div>
+            <nav class="nav-links" id="nav-links">
+                <a href="#" data-page="home" class="active">Home</a>
+                <a href="#" data-page="menu">Menu</a>
+                <a href="#" data-page="about">About</a>
+                <a href="#" data-page="contact">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <a href="tel:0814478395" class="phone-btn"><i class="fas fa-phone"></i> 081 447 8395</a>
+                <div class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN APP CONTAINER -->
+    <main id="app">
+
+        <!-- ================= HOME PAGE ================= -->
+        <section id="page-home" class="page active">
+            <div class="hero-slider">
+                <div class="slider-container" id="slider-container"></div>
+                <div class="slider-controls">
+                    <button id="prev-slide" class="slider-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots" id="slider-dots"></div>
+                    <button id="next-slide" class="slider-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="hero-overlay-text">
+                    <h1>Food • Love • Soul</h1>
+                    <p>The Best Burgers in Lenasia</p>
+                    <a href="#" data-page="menu" class="btn btn-primary">View Our Menu</a>
+                </div>
+            </div>
+
+            <div class="info-banner">
+                <div class="container banner-content">
+                    <div class="banner-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>8513 Goshawk Street, Lenasia South</p>
+                        </div>
+                    </div>
+                    <div class="banner-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Sat: 11:00 - 18:00 (Sun Closed)</p>
+                        </div>
+                    </div>
+                    <div class="banner-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>081 447 8395</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="signature-section">
+                <div class="container">
+                    <h2 class="section-title">Our Signature Dishes</h2>
+                </div>
+                <div class="marquee-wrapper">
+                    <div class="marquee-track" id="marquee-track"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= MENU PAGE ================= -->
+        <section id="page-menu" class="page">
+            <div class="container page-container">
+                <h1 class="page-title">Our Menu</h1>
+                <p class="page-subtitle">Click on the image to zoom in and view our full delicious menu.</p>
+                <div class="menu-image-wrapper">
+                    <img src="images/menu.jpg" alt="Food By K Full Menu" id="menu-img">
+                </div>
+                <div class="menu-categories-grid">
+                    <div class="menu-category">
+                        <h3>Kota</h3>
+                        <ul>
+                            <li><strong>Kota with Russian, Egg, Cheese, & Chips</strong> - R45</li>
+                            <li><strong>Kota with Chicken, Cheese, & Chips</strong> - R50</li>
+                        </ul>
+                    </div>
+                    <div class="menu-category">
+                        <h3>Burgers</h3>
+                        <ul>
+                            <li><strong>Double Beef Speciality Burger</strong> - R75</li>
+                            <li><strong>Chicken Schnitzel Burger</strong> - R65</li>
+                        </ul>
+                    </div>
+                    <div class="menu-category">
+                        <h3>Platters</h3>
+                        <ul>
+                            <li><strong>Platter for One</strong> - R150</li>
+                            <li><strong>Box Feast (Serves 3-4)</strong> - R290</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT PAGE (UPDATED) ================= -->
+        <section id="page-about" class="page">
+            <div class="container page-container">
+                <h1 class="page-title">About Food By K</h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Food. Love. Soul.</h2>
+                        <p>Founded in Lenasia South, Food By K is more than just a takeaway; it's a family passion project dedicated to serving hearty, flavorful meals that bring people together. We believe that great food is made with love and feeds the
+                            soul.
+                        </p>
+                        <p>From our famous double beef specialty burgers to our flame-grilled ribs and crispy wings, every dish is prepared fresh using only the highest quality ingredients. We are proud to be a local favorite, known for our generous portions
+                            and that unmistakable taste of home.</p>
+                        <p><strong>Visit us at:</strong> 8513 Goshawk Street, Lenasia South, Johannesburg.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="images/Logo.jpg" alt="Food By K Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT PAGE ================= -->
+        <section id="page-contact" class="page">
+            <div class="container page-container">
+                <h1 class="page-title">Contact Us</h1>
+                <p class="page-subtitle">We'd love to hear from you. Come visit us or give us a call!</p>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Address</h3>
+                        <p>8513 Goshawk Street,<br>Lenasia South,<br>Johannesburg, South Africa</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Phone</h3>
+                        <p><a href="tel:0814478395">081 447 8395</a></p>
+                        <p>Call us to place your order!</p>
+                    </div>
+                    <div class="contact-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Operating Hours</h3>
+                        <ul class="hours-list">
+                            <li><span>Monday - Thursday:</span> 11:00 - 18:00</li>
+                            <li><span>Friday - Saturday:</span> 11:00 - 18:00</li>
+                            <li><span>Sunday:</span> CLOSED</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <img src="images/Logo.jpg" alt="Food By K Logo">
+                <p>Food • Love • Soul</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" data-page="home">Home</a>
+                <a href="#" data-page="menu">Menu</a>
+                <a href="#" data-page="about">About</a>
+                <a href="#" data-page="contact">Contact</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Food By K. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
